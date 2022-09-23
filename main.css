@@ -37,13 +37,13 @@ body{
 }
 .text{
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
     margin: 0px 0px;
     font-family: fantasy;
     color: rgb(16, 80, 96);
 }
 .data-block{
-    width: 400px;
+    width: 300px;
     height: 150px;
     margin: 20px;
     background-color: rgba(255, 170, 12, 0.982);
