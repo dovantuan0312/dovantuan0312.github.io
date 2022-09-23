@@ -148,5 +148,5 @@ database.ref("/controll/maxOfTemp").on("value", function (snapshot) {
 });
 database.ref("/controll/maxOfHum").on("value", function (snapshot) {
     var temp = snapshot.val();
-    document.getElementById('results2').innerHTML = `Set tempurature: ${temp} %`
+    document.getElementById('results2').innerHTML = `Set humidity: ${temp} %`
 });
