@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <title>Controll</title>
+</head>
+<body>
+    <div class="main">
+        <div class="button-block">
+            <p class="text">FAN: <span class="text" id="stt1">...</span><br ><i class="fas fa-fan" ></i></p>
+            <div class="content">
+                <button id="bt1On" class="button">ON</button>
+                <button id="bt1Off" class="button">OFF</button>
+            </div>
+        </div>
+        <div class="button-block">
+            <p class="text">PUMP: <span class="text" id="stt2">...</span><br><i class="fas fa-faucet"></i></i></p>
+            <div class="content">
+                <button id="bt2On" class="button">ON</button>
+                <button id="bt2Off" class="button">OFF</button>
+            </div>
+        </div>
+        <div class="data-block">
+            <p class="text" style="margin-top: 25px ;">TEMPERATURE: <span class="text" id="stt3">...</span>&degC<br><i class="fas fa-thermometer-half"></i></p>
+        </div>
+        <div class="data-block">
+            <p class="text" style="margin-top: 25px ;">HUMADITY: <span class="text" id="stt4">...</span>%<br><i class="fas fa-tint"></i></i></i></p>
+        </div>
+        <div class="button-block">
+            <p class="text">AUTO: <span class="text" id="stt5">...</span><br ></i></p>
+            <div class="content" style="margin: 50px;">
+                <button id="bt3On" class="button">ON</button>
+                <button id="bt3Off" class="button">OFF</button>
+            </div>
+        </div>
+        <div class="data-block">
+            <form onsubmit="submitForm1(event)">
+                <input type="number" placeholder="   Max of temperature" id="valueInput1" style="width: 300px;" min="1" max="100"">
+                <input type="submit" value="ok" style="padding: 1px;"/>
+            </form>
+            <p class="text" id="results1" style="margin-top: 10px;">Set temperature: .... &degC</p>
+        </div>
+        <div class="data-block">
+            <form onsubmit="submitForm2(event)">
+                <input type="number" placeholder="   Max of humidity" id="valueInput2" style="width: 300px;" min="1" max="100"">
+                <input type="submit" value="ok" style="padding: 1px;"/>
+            </form>
+            <p class="text" id="results2" style="margin-top: 10px;">Set humidity: .... %</p>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

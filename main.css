@@ -1,0 +1,65 @@
+/* # id */
+/* . class */
+body{
+    background-color: rgb(173, 245, 241);
+}
+.main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.button-block{
+    width: 250px;
+    height: 150px;
+    margin: 20px;
+    background-color: rgba(255, 170, 12, 0.982);
+    background-clip: content-box;
+    border: 5px;
+    border-color: rgb(32, 82, 82);
+    border-style:solid;
+    border-radius: 30px 30px;
+
+}
+.content{
+    display: flex;
+    justify-content:space-evenly;
+}
+.button{
+    width: 70px;
+    height: 30px;
+    font-size: 20px;
+    font-family:fantasy;
+    border: 3px;
+    border-style: solid;
+    border-radius: 15px;color: rgb(38, 75, 106);
+}
+.text{
+    text-align: center;
+    font-size: 40px;
+    margin: 0px 0px;
+    font-family: fantasy;
+    color: rgb(16, 80, 96);
+}
+.data-block{
+    width: 400px;
+    height: 150px;
+    margin: 20px;
+    background-color: rgba(255, 170, 12, 0.982);
+    background-clip: content-box;
+    border: 5px;
+    border-color: rgb(32, 82, 82);
+    border-style:solid;
+    border-radius: 30px 30px;
+}
+input{
+    margin-left: 10px;
+    height: 30px;
+    width: 50px;
+    background-color: rgb(255, 201, 174);
+    border-radius: 25px;
+    font-family: fantasy;
+    color: rgb(106, 83, 58);
+    margin-top: 30px;
+}
